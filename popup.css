@@ -1,0 +1,190 @@
+
+    html, 
+    body {
+        font-family : 'Open Sans', sans-serif;
+        font-size: 14px;
+        margin: 0;
+        min-height: 180px;
+        padding: 0;
+        width: 384px;
+    }
+
+    h1 {
+        font-family: 'Menlo', monospace;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        color: #2f5876;
+    }
+
+    h2 {
+        font-family: 'Menlo', monospace;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 0;
+        align-items: center;
+        padding-left:35px;
+        height:30px;
+        color: #2f5876;
+        padding-top:2px;
+        padding-bottom: 5px;
+    }
+
+    h3 {
+        font-family: 'Menlo', monospace;
+        font-size: 12px;
+        font-weight: 200;
+        margin: 0;
+        align-items: center;
+        padding-left:35px;
+        height:10px;
+        color: #2f5876;
+        padding-top:5px;
+        padding-bottom: 5px;
+    }
+    h4 {
+        font-family: 'Menlo', monospace;
+        font-size: 9px;
+        font-weight: 200;
+        margin: 0;
+        align-items: center;
+        padding-left:10px;
+        height:10px;
+        color: #2f5876;
+        padding-top:1px;
+        padding-bottom: 5px;
+    }
+
+    p {
+        font-family: 'Menlo', monospace;
+        font-size: 12px;
+        padding-left:25px;
+    }
+
+    a:link, a:visited {
+        color: #000;
+        outline: 0;
+        text-decoration: none;
+    }
+
+    img {
+        width: 30px;
+
+    }
+
+    .modal-header {
+        align-items: center;
+        border-bottom: 0.5px solid #dadada;
+    }
+    
+    .modal-content {
+        padding: 0 22px;
+        align-items: center;
+    }
+
+    .modal-icons {
+        border-top: 0.5px solid #dadada;
+        height: 50px;
+        width: 100%;
+        align-items: center;
+        padding-left: 35px;
+    }
+
+    .logo {
+        padding: 16px;
+    }
+
+    .logo-icon {
+        vertical-align: text-bottom;
+        margin-right: 12px;
+    }
+
+    .version {
+        color: #444;
+        font-size: 18px;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
+
+    .flex {
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+        width: 120px
+    }
+
+    .flex:hover {
+        opacity: 0.4;
+    }
+
+    .flex .fa {
+        font-size: 40px;
+        color: #2f5876;
+    }
+
+    .fa-stack-text { 
+        font-size: 8px;
+        border:none;
+        align-items: center;
+        font-weight:bold;
+    }
+
+    .circle {
+        display: flex;
+        border: 3px solid #2f5876;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    button {
+        background: transparent;
+        border:0;
+        outline:none;
+
+    }
+
+    .paddedDiv {
+        padding: 5px;
+    }
+
+
+      .row {
+          padding-left:15px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      input[type="text"] {
+        font-size:15px;
+    }
+
+    label {
+        font-size:10px;
+        font-weight:bold;
+    }
+
+.column-left{ float: left; width: 33%; }
+.column-center{ display: inline-block; width: 33%; }
+.column-right{ float: right; width: 33%; }
+
+
+.column-leftnum{ float: left; width: 30%; padding-left:20px; }
+.column-centernum{ display: inline-block; width: 28%; padding-left:10px; }
+.column-rightnum{ float: right; width: 30%; padding-left:10px; }
+
+
+.column-leftbtn{ float: left; width: 30%; padding-left:12px; }
+.column-centerbtn{ display: inline-block; width: 28%; padding-left:10px; }
+.column-rightbtn{ float: right; width: 32%; padding-left:5px; }
