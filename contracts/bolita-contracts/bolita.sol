@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: -U+24B7-Ⓑ-
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 
 import "../common-contracts/SafeMath.sol";
 import "../common-contracts/AccessControl.sol";

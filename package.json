@@ -14,7 +14,9 @@
   "author": "MarkF",
   "license": "ISC",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "solc": "^0.8.1"
+  },
   "devDependencies": {
     "@biconomy/mexa": "^1.5.6",
     "@openzeppelin/contracts": "^*",
