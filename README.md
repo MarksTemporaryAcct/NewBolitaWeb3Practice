@@ -25,7 +25,7 @@ Your odds are higher with 1 digit betting, but your payout is higher with 3 digi
 Cash would be handed off to anyone in the neighbourhood to bet on the number, and you would call in to "The Office" to give your name, number, and bet amount.
 
 The cool part is, they were betting on the last 3 digits of the total handle at New York City's horse racing track. The handle is the toal amount bet on all races for the day. 
-These numbers would be printed in the paper everyday, and on the day off there was a toll number that you could call from any pay phone and they would read out the results, with the total handle of the day being announced last. So you could get the winning number through word of mouth, but verify the winning number from several independent sources. All without the internet.
+These numbers would be printed in the paper everyday, and on the day of there was a toll number that you could call from any pay phone and they would read out the results, with the total handle of the day being announced last. So you could get the winning number through word of mouth, but verify the winning number from several independent sources. All without the internet.
 
 Now, the real money was made by banking the cash that was handled - not too dissimilar from an insurance company's business model. But additional expenses like paying off cops, renting several apartments so you could flip offices at the drop of a hat, paying bonds for those who got caught, etc hurt their margins, but such is life in a crooked New York City. 
 
