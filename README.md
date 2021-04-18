@@ -57,6 +57,7 @@ Currently, results.html is used for testing.
 
 Run the devtools with preserve logging = true to watch the console for outputs
 > 'Get the latest winning numbers' will be used to test call to bolita.sol's setWinningNumber()
+
 > 'GET CNN NUMBERS' will get the positive cases, and parse the last 3 digits.
 
 
