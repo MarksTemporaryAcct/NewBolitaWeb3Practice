@@ -1,13 +1,14 @@
+(https://github.com/MarksTemporaryAcct/NewBolitaWeb3Practice/blob/master/images/bolita_logo.png)
 # BOLITA
 
-Players et on the last 3 digits of the days positive covid cases
+Players bet on the last 3 digits of the days positive covid cases
 
 Bet amount defaults to 5 finney sent as msg.value
 
 At 15:00 the application will get the latest covid data, and set the last 3 digits as the winning numbers, at which point: 
-	+Winners will be paid out (with event emitted)
-	+Bets will be cleared (with event emitted)
-	+Betting will be opened again for tomorrow's number (with event emitted)
+	- Winners will be paid out (with event emitted)
+	- Bets will be cleared (with event emitted)
+	- Betting will be opened again for tomorrow's number (with event emitted)
 	
 Contract should be deployed with some ETH to payout winners
 
