@@ -56,8 +56,8 @@ The homepage is popup.html. On form submit from betting on 1 digit, you are take
 Currently, results.html is used for testing.
 
 Run the devtools with preserve logging = true to watch the console for outputs
-'Get the latest winning numbers' will be used to test call to bolita.sol's setWinningNumber()
-'GET CNN NUMBERS' will get the positive cases, and parse the last 3 digits.
+> 'Get the latest winning numbers' will be used to test call to bolita.sol's setWinningNumber()
+> 'GET CNN NUMBERS' will get the positive cases, and parse the last 3 digits.
 
 
 Run ganache-cli/TestRPC with the command:
