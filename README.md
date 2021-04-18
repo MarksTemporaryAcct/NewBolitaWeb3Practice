@@ -1,4 +1,4 @@
-(https://github.com/MarksTemporaryAcct/NewBolitaWeb3Practice/blob/master/images/bolita_logo.png)
+<img src="./images/bolita_logo.png" align="right" />
 # BOLITA
 
 Players bet on the last 3 digits of the days positive covid cases
