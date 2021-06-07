@@ -101,7 +101,7 @@ contract Bolita is AccessController {
             _;
         }
 
-        modifier addressBalanceChecker(address[] memory _winners)
+        modifier bolitaContractBalanceChecker(address[] memory _winners)
         {
             uint256 totalPayout = (_winners.length).mul(singleDigitWinnings);
             if(address(this).balance < totalPayout)
@@ -120,50 +120,56 @@ contract Bolita is AccessController {
                     
                 }
             }            
-
+            require(address(this).balance >= totalPayout,
+                    "NOT ENOUGH FUNDS");
             _;
         }
 
-    //fallback function
-    constructor()
-        payable 
-    {
-        bBettingIsOpen = true;
-        emit BettingIsOpen(bBettingIsOpen);
-        //add require for value of ETH sent to contract on deploy
-    }
-    
-    fallback() external payable { 
-        //console.log("FALLBACK");
-    }
-    
 
-    receive() external payable {
-        emit Received(msg.sender, msg.value);
-    }
-    
-    function sendETHtoContract()
-        external
-        payable
-    {
-        payable(address(this)).transfer(msg.value);
-    }
+    ////////////////////////////////////////////////
+    //                  CORE                      //
+    ////////////////////////////////////////////////
+
+        //fallback function
+        constructor()
+            payable 
+        {
+            bBettingIsOpen = true;
+            emit BettingIsOpen(bBettingIsOpen);
+            //add require for value of ETH sent to contract on deploy
+        }
+        
+        fallback() external payable { 
+            //console.log("FALLBACK");
+        }
+        
+
+        receive() external payable {
+            emit Received(msg.sender, msg.value);
+        }
+        
+        function sendETHtoContract()
+            external
+            payable
+        {
+            payable(address(this)).transfer(msg.value);
+        }
 
 
-    function withdrawBalanceFromContract(uint256 _amount)
-        external
-        onlyOwner
-    {
-        payable(ownerAddress).transfer(_amount);
-    }
+        function withdrawBalanceFromContract(uint256 _amount)
+            external
+            onlyOwner
+        {
+            payable(ownerAddress).transfer(_amount);
+        }
 
-    function getAddressesByBet(uint16 _numBetOn)
-        external
-        view
-        returns (address[] memory)
-    {
-        return (mapOfBets[_numBetOn][BetType.FIRSTDIGIT]);
-    }
+        function getAddressesByBet(uint16 _numBetOn)
+            external
+            view
+            returns (address[] memory)
+        {
+            return (mapOfBets[_numBetOn][BetType.FIRSTDIGIT]);
+        }
 
     ////////////////////////////////////////////////
     //             BETTING FUNCTIONS              //
@@ -188,7 +194,6 @@ contract Bolita is AccessController {
             external
             payable
         {
-
             makeBet(_player, _numberBetOn, BetType.THIRDDIGIT);
         }
 
@@ -317,7 +322,6 @@ contract Bolita is AccessController {
                 BetType.THIRDDIGIT
             );
 
-
             payWinners(
                 mapOfBets[_firstWinningNum][BetType.FIRSTDIGIT],
                 singleDigitWinnings
@@ -348,7 +352,7 @@ contract Bolita is AccessController {
             payable
             onlyCalledByContract
             bettingIsClosed
-            addressBalanceChecker(_winners)
+            bolitaContractBalanceChecker(_winners)
         {
             
             for(uint i = 0; i<_winners.length; i++) {
